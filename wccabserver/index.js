@@ -53,5 +53,5 @@ router.route('/cabs').post(function(req,res){
 app.use('/api', router)
 
 //start server
-app.listen(3000)
+app.listen(3001)
 console.log('Server Started!')
