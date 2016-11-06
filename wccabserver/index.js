@@ -1,9 +1,15 @@
 var express = require('express')
- 
 var app = express()
- 
-app.get('/notes', function(req, res) {
-  res.json({notes: "This is your notebook. Edit this to start saving your notes!"})
+
+var bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json)
+
+app.get('/cabs', function(req, res) {
+
+  res.json({cabs: "This is your platform to find a cab!"})
 })
- 
-app.listen(3001)
+
+app.listen(3000)
+console.log('Server Started!')
