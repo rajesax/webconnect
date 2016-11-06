@@ -1,7 +1,7 @@
-var mongoose     = require('mongoose')
-var Schema       = mongoose.Schema
+var mongoose = require('mongoose')
+var Schema = mongoose.Schema
 
-var CabSchema   = new Schema({
+var CabSchema = new Schema({
     id: Number,
     latitude: Number,
     longitude: Number
